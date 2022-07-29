@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* CSS FOR HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #112B3C;
+    height: 4rem;
+    align-items: center;
+}
+
+.logo {
+    color: #F66B0E;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F15412;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+@media(max-width:968px) {
+    .header {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/* CSS FOR LOGIN-BOX */
+
+.login-box {
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-box h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.box input {
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+button {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/* CSS FOR CONTACT ME HTML FILE */
+
+.contactme {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 2rem 6rem;
+    gap: 2rem;
+}
+
+.contact-right {
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+.contact-right h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-left {
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+input {
+    width: 100%;
+    margin: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    color: #F15412;
+}
+
+button {
+    background: #F15412;
+    width: 6rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(254, 158, 39, 0.3);
+    display: block;
+    cursor: pointer;
+}
+
+tr td:first-child {
+    padding-right: 1rem;
+}
+
+tr td {
+    padding-top: 1rem;
+}
+
+@media(max-width:600px) {
+    .contactme {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+
+    .contact-right h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        width: 4rem;
+    }
+
+    .contact-left h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    table {
+        font-size: 00.8rem;
+    }
+
+}
+
+@media(max-width:1280px) {
+    .contactme {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+}
